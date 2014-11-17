@@ -1,0 +1,74 @@
+
+
+<!---Topology Info---!>
+
+!--Components--!
+->Topology: star3-1-1416092412
+-->Component: center==star3-1-1416092412
+--->Parents: [spout_0, spout_1]
+--->Children: [bolt_output_0, bolt_output_1]
+--->execs: [[6, 6], [5, 5], [7, 7], [8, 8]]
+-->Component: bolt_output_0==star3-1-1416092412
+--->Parents: [center]
+--->Children: []
+--->execs: [[2, 2], [1, 1]]
+-->Component: bolt_output_1==star3-1-1416092412
+--->Parents: [center]
+--->Children: []
+--->execs: [[3, 3], [4, 4]]
+-->Component: spout_1==star3-1-1416092412
+--->Parents: []
+--->Children: [center]
+--->execs: [[11, 11], [12, 12]]
+-->Component: spout_0==star3-1-1416092412
+--->Parents: []
+--->Children: [center]
+--->execs: [[10, 10], [9, 9]]
+
+
+<!---Scheduling Change---!>
+->hostname: pc254.emulab.net Supervisor Id: f4601e84-b5fd-4007-adb6-b3ce02afb2fb
+->WorkerToExec: 
+-->6703 => [[1, 1]]
+-->6702 => [[4, 4]]
+-->6700 => [[10, 10]]
+-->6701 => [[7, 7]]
+->hostname: pc249.emulab.net Supervisor Id: b3b7d5dc-2eb1-4e54-b0f5-7f2a9b083669
+->WorkerToExec: 
+-->6701 => [[8, 8]]
+-->6702 => [[5, 5]]
+-->6703 => [[2, 2]]
+-->6700 => [[11, 11]]
+->hostname: pc248.emulab.net Supervisor Id: 0614a61f-3172-4e13-b32e-4536cf48b096
+->WorkerToExec: 
+-->6700 => [[12, 12]]
+-->6701 => [[9, 9]]
+-->6703 => [[3, 3]]
+-->6702 => [[6, 6]]
+
+
+<!---Scheduling Change---!>
+->hostname: pc254.emulab.net Supervisor Id: f4601e84-b5fd-4007-adb6-b3ce02afb2fb
+->WorkerToExec: 
+-->6703 => [[1, 1]]
+-->6702 => [[4, 4]]
+-->6700 => [[10, 10]]
+-->6701 => [[7, 7]]
+->hostname: pc246.emulab.net Supervisor Id: b3626e79-d660-4563-a8d0-655d5b0237cf
+->WorkerToExec: 
+-->6703 => [[6, 6]]
+-->6702 => []
+-->6700 => []
+-->6701 => []
+->hostname: pc249.emulab.net Supervisor Id: b3b7d5dc-2eb1-4e54-b0f5-7f2a9b083669
+->WorkerToExec: 
+-->6701 => [[8, 8]]
+-->6702 => [[5, 5]]
+-->6703 => [[2, 2]]
+-->6700 => [[11, 11]]
+->hostname: pc248.emulab.net Supervisor Id: 0614a61f-3172-4e13-b32e-4536cf48b096
+->WorkerToExec: 
+-->6700 => [[12, 12]]
+-->6701 => [[9, 9]]
+-->6703 => [[3, 3]]
+-->6702 => []
